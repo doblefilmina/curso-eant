@@ -1,5 +1,26 @@
+:root {
+    font-size: 62.5%;
+} 
+
 body {
     font-family: arial;
 }
 
+figure img {
+    display: block;
+    width: 100%;
+}
+
+figure figcaption {
+    background-color: black;
+    color: white;
+    font-size: 5rem;
+}
+
+figure h2 {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 2rem;
+}
 /* ESTILOS CDN */
