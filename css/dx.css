@@ -2,8 +2,24 @@
     font-size: 62.5%;
 } 
 
+* {
+    outline: dotted 2px red;
+}
+
 body {
     font-family: arial;
+    overflow-x: hidden;
+}
+
+figure {
+    float: left;
+    width: 100vw;
+}
+
+#noticias-destacadas {
+    width: 300vw;
+    overflow: auto;
+    animation: 10s slider infinite;
 }
 
 figure img {
@@ -22,5 +38,18 @@ figure h2 {
     font-size: 4rem;
     font-weight: bold;
     padding: 2rem;
+
+    
 }
 /* ESTILOS CDN */
+
+@keyframes slider {
+    0% {  margin-left: 0; opacity: 0.1; }
+    30% {  margin-left: 0;  }
+    35% {  margin-left: -100vw;  }
+    65% {  margin-left: -100vw;  }
+    70% {  margin-left: -200vw;  }
+    100% { margin-left: -200vw; opacity: 1;  }
+
+
+}
