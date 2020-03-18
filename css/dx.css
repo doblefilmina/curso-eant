@@ -2,16 +2,66 @@
     font-size: 62.5%;
 } 
 
-* {
+/** {
     outline: dotted 2px red;
-}
+}*/
 
 body {
     font-family: arial;
     overflow-x: hidden;
+    padding: 0rem;
+    overflow-x: hidden;
 }
 
-figure {
+header {
+    background-color: black;
+    overflow: auto;
+    padding: 0.5rem;
+    width: 100%;
+   /* position: fixed;*/
+}
+
+#encabezado {
+    width: 50%;
+    float: left;
+    margin: 0rem;
+}
+header img {
+    float: left;
+}
+
+header a {
+    float: left;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0rem;
+    float: left;
+    margin: 0.5rem;    
+}
+
+nav {
+    width: 50%;
+    color: white;
+    float: left;
+    margin-top: 1rem;
+}
+
+ul {
+    font-size: 1.1rem;
+    float: right;
+    margin-top: auto;
+}
+
+nav li {
+    display: inline;
+    margin: 0.1rem;
+}
+
+#noticias-destacadas figure {
     float: left;
     width: 100vw;
 }
@@ -20,6 +70,7 @@ figure {
     width: 300vw;
     overflow: auto;
     animation: 10s slider infinite;
+    margin-bottom: 1rem;
 }
 
 figure img {
@@ -37,14 +88,72 @@ figure h2 {
     color: white;
     font-size: 4rem;
     font-weight: bold;
-    padding: 2rem;
+    padding: 2rem;    
+}
 
-    
+
+#ultimas-noticias {
+   
+    width: 100vw;
+    background-color: white;
+    overflow: auto;
+}
+
+#ultimas-noticias figure {
+    float: left;
+    width: 30%;
+}
+
+#ultimas-noticias img {
+    margin: auto;
+}
+
+#ultimas-noticias article {
+    float: right;
+    width: 70%;
+}
+
+#ultimas-noticias a {
+    overflow: auto;
+    color: black;
+    text-decoration: none;
+}
+
+.noticias {
+    border-bottom-color: rgba(43, 42, 42, 0.836);
+    border-bottom-width: 0.02rem;
+    border-bottom-style: solid;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5;
+    overflow: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+h3 {
+    font-weight: bold;
+    color: black;
+    margin: 0.9rem;
+    font-size: 2rem;
+}
+cite {
+    margin: 0.9rem;
+    font-size: 0.8rem;
+}
+
+#ultimas-noticias p {
+    margin: 0.9rem;
+    font-size: 0.9rem; 
+}
+
+.autor {
+    font-weight: bold;
 }
 /* ESTILOS CDN */
 
 @keyframes slider {
-    0% {  margin-left: 0; opacity: 0.1; }
+    0% {  margin-left: 0; opacity: 1; }
     30% {  margin-left: 0;  }
     35% {  margin-left: -100vw;  }
     65% {  margin-left: -100vw;  }
