@@ -2,9 +2,9 @@
     font-size: 62.5%;
 } 
 
-/** {
-    outline: dotted 2px red;
-}*/
+* {
+    outline: dotted 1px red;
+}
 
 body {
     font-family: arial;
@@ -91,7 +91,7 @@ figure h2 {
     padding: 2rem;    
 }
 
-
+/*
 #ultimas-noticias {
    
     width: 100vw;
@@ -149,6 +149,43 @@ cite {
 
 .autor {
     font-weight: bold;
+}
+*/
+#noticiasv02 {
+    width: 100vw;
+}
+
+.noticiav03 {
+    width: 100%;
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start ;
+}
+
+.noticia-img {
+    width: 25%;
+}
+
+.noticia-txt {
+    width: 65%;
+    background-color: lightgreen;
+}
+
+.noticia-img img {
+    width: 100%;
+}
+
+#tabla-resultado table {
+    margin: auto;
+}
+
+#tabla-resultado th {
+    background-color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
 }
 /* ESTILOS CDN */
 
