@@ -9,25 +9,28 @@
 body {
     font-family: arial;
     overflow-x: hidden;
-    padding: 0rem;
-    overflow-x: hidden;
+    padding: 0.01rem;
 }
 
 header {
     background-color: black;
     overflow: auto;
-    padding: 0.5rem;
-    width: 100%;
+    padding: 0.2rem;
+    width: 100vw;
    /* position: fixed;*/
 }
 
-#encabezado {
+header a {
+    display: block;
+    overflow: auto;
     width: 50%;
     float: left;
     margin: 0rem;
 }
+
 header img {
     float: left;
+    width: 25%;
 }
 
 header a {
@@ -36,11 +39,12 @@ header a {
 
 header h1 {
     color: white;
-    font-size: 2.5rem;
+    font-size: 1rem;
     font-weight: bold;
     padding: 0rem;
-    float: left;
-    margin: 0.5rem;    
+    float: right;
+    margin: 0.1rem;
+    width: 70%;    
 }
 
 button {
@@ -51,30 +55,35 @@ nav {
     width: 50%;
     color: white;
     float: left;
-    margin-top: 1rem;
+    margin-top: 0rem;
+    padding: 0rem;
+    text-align: left;
 }
 
 ul {
-    font-size: 1.1rem;
     float: right;
-    margin-top: auto;
+    margin-top: 0rem;
+    
+   /* margin-top: auto; */
 }
 
 nav li {
     display: inline;
-    margin: 0.1rem;
+    margin-right: 0.2rem;
+    font-size: 0.4rem;
 }
 
 #noticias-destacadas figure {
+    background-color: black;
     float: left;
     width: 100vw;
 }
 
 #noticias-destacadas {
-    width: 100vw;
+    width: 300vw;
     overflow: auto;
-    /*animation: 10s slider infinite;*/
-    margin-bottom: 1rem;
+   /* animation: 10s slider infinite;*/
+    margin-bottom: 0.2 rem;
 }
 
 figure img {
@@ -82,73 +91,92 @@ figure img {
     width: 100%;
 }
 
-figure figcaption {
-    background-color: black;
-    color: white;
-    font-size: 5rem;
-}
-
 figure h2 {
     color: white;
-    font-size: 4rem;
+    font-size: 1.7rem;
     font-weight: bold;
-    padding: 2rem;    
+    padding: 1rem;    
 }
 
 
-#ultimas-noticias {
-   
+#ultimas-noticias {   
     width: 100vw;
     background-color: white;
     overflow: auto;
 }
 
+.noticias {
+    width: 100%;
+    border-bottom-color: rgba(43, 42, 42, 0.836);
+    border-bottom-width: 0.02rem;
+    border-bottom-style: solid;
+    padding-bottom: 0.1rem;
+    padding-top: 0.1;
+    overflow: auto;
+    margin-top: 0.05rem;
+    margin-bottom: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.noticias figure {
+    min-width: 50px;
+    max-width: 20%;
+    flex-grow: 1;
+    float: none;
+}
+
+.noticias article {
+    min-width: 60%;
+    flex-grow: 3;
+    float: none;
+}
+/*
 #ultimas-noticias figure {
     float: left;
     width: 30%;
 }
-
+*/
+/*
 #ultimas-noticias img {
     margin: auto;
 }
-
+*/
+/*
 #ultimas-noticias article {
     float: right;
     width: 70%;
-}
+    
+}*/
 
 #ultimas-noticias a {
     overflow: auto;
     color: black;
     text-decoration: none;
+    display: block;
+    margin: 0;
 }
 
-.noticias {
-    border-bottom-color: rgba(43, 42, 42, 0.836);
-    border-bottom-width: 0.02rem;
-    border-bottom-style: solid;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5;
-    overflow: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
 
-}
 
 h3 {
     font-weight: bold;
     color: black;
-    margin: 0.9rem;
-    font-size: 2rem;
+    margin: 0.1rem 0.2rem 0.1rem 0.4rem;
+    font-size: 0.8rem;
 }
 cite {
-    margin: 0.9rem;
-    font-size: 0.8rem;
+    margin: 0.1rem 0.2rem 0.3rem 0.4rem;
+    font-size: 0.3rem;
+    display: block;
 }
 
 #ultimas-noticias p {
-    margin: 0.9rem;
-    font-size: 0.9rem; 
+    margin: 0.1rem 0.2rem 0.1rem 0.4rem;
+    font-size: 0.35rem; 
 }
 
 .autor {
@@ -204,6 +232,62 @@ cite {
 
 }
 
+
+@media screen and (max-width: 80px ) {
+
+    header {
+        padding: 0;
+        width: 100vw;
+        margin: 0rem;
+    }
+
+    header a {
+        width: 80%;
+        float: left;
+        margin: 0rem;
+    }
+
+    header h1 {
+        font-size: 0.6rem;
+        width: 75%;
+        float: right;
+        margin: 0rem;
+        text-align: center;
+    }
+
+    header img {
+        width: 25%;
+        margin: 0rem;
+        float: left;
+    }
+
+    button {
+        display: block;
+        color: white;
+        float: right;
+        font-size: 0.6rem;
+        line-height: 80%;
+        border: none;
+        padding: 0.15rem;
+        background-color: transparent;
+        width: 18%;
+        margin: 0rem;
+        text-align: center;
+
+    }
+
+    header nav {
+        display: none;
+    }
+
+    figure h2 {
+        font-size: 0.35rem;
+        padding: 0.3rem;
+        text-align: left;
+    }
+
+    
+}
 /*
 @media screen and (max-width: 480px) {
     header {
@@ -218,10 +302,10 @@ cite {
 }
 */
 
-
-@media screen and (max-width: 800px) {
+/*
+@media screen and (max-width: 800px) {   */
     /*inicio de @media query */
-    #ultimas-noticias {
+ /*   #ultimas-noticias {
         flex-direction: column;
     }
 
@@ -255,5 +339,5 @@ cite {
         display: block;
     }
     /*fin de @media query */
-
-}
+/*
+} */
